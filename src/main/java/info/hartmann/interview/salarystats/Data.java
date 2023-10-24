@@ -63,7 +63,7 @@ public class Data {
     public void printAverageSalary() {
         AtomicInteger totalSalary = new AtomicInteger();
         salariesStats.forEach((k, v) -> totalSalary.addAndGet(v));
-        System.out.println("The average salary : " + totalSalary.get());
+        System.out.println("The average salary : " + totalSalary.get() / salariesStats.size());
     }
 
     public void printHighestSalary() {
